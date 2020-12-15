@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>HireUss</title>
+    <title>HireUs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Hire.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -268,7 +268,11 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
         </script>
-        
+        <script>
+            $('.submitbtn').on("click", function(){
+               alert("Your Form Has Been Succesfully Sended! We will be contacting you in a short time.");
+            })
+        </script>   
         <script>
         function sendEmail(){
             var name = $(".texter");
@@ -291,7 +295,6 @@ document.addEventListener("click", closeAllSelect);
                     }, success: function(response){
                         $('.myForm')[0].reset();
                         $('.sent-noti').text("Your Form has been successfully sended!");
-                        alert("Your Form Has Been Succesfully Sended! We will be contacting you in a short time.");
                     }
                 });
             }
