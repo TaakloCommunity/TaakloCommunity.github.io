@@ -269,8 +269,18 @@ then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
         </script>
         <script>
+            var name = $(".texter");
+            var number = $(".numbers");
+            var email = $(".emailer");
+            var service = $(".selecter1");
+            var budget = $(".selecter2");
             $('.submitbtn').on("click", function(){
-               alert("Your Form Has Been Succesfully Sended! We will be contacting you in a short time.");
+                if(isEmpty(name) || isEmpty(numbers) || isEmpty(emailer) || isEmpty(service) || isEmpty(budget){
+                   
+                   }
+                else{
+                   alert("Your Form Has Been Succesfully Sended! We will be contacting you in a short time.");
+                   }   
             })
         </script>   
         <script>
