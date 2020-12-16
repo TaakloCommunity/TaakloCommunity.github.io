@@ -314,8 +314,8 @@
 
                 <h1 class="accordian-title">Ask Questions</h1>
 
-                <form class="ask-question-box" method="post">
-                    <input class="questioninput" placeholder="Ask your question" value="">
+                <form class="ask-question-box" method="post" action="https://php-taaklo.000webhostapp.com">
+                    <input class="questioninput" name="questionhere" placeholder="Ask your question" value="">
                     <input type="submit" class="questsubmit">
                 </form>
 
@@ -405,6 +405,38 @@
                     })
                 })            
             </script>
+
+<script>
+    function sendEmail() {
+      var question = $(".questioninput");
+      if (isNotEmpty(question)) {
+        $.ajax({
+          url: 'form.php',
+          method: 'POST',
+          dataType: 'json',
+          data: {
+            question: question.val(),
+          }, success: function (response) {
+            $('.myForm')[0].reset();
+            $('.sent-noti').text("Your Form has been successfully sended!");
+          }
+        });
+      }
+
+    }
+
+    function isNotEmpty(caller) {
+      if (caller.val() == "") {
+        caller.css('border', '1px solid red');
+        return false;
+      }
+      else {
+        caller.css('border', '');
+        return true;
+      }
+    }
+
+  </script>
 
         </div>
     </body>
