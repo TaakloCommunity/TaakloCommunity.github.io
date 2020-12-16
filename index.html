@@ -391,26 +391,9 @@
                 $(window).on("scroll", function () {
                     if ($(window).scrollTop()) {
                         $('nav').addClass('black');
-                        $('.logo').addClass('pinklabel');
-                        $('.logo').removeClass('logo');
-                        $('nav li a').addClass('pinknav');
-                        $('.toggle').addClass('pinktoggle');
-                        $('.toggle').removeClass('toggle');
-                        $('nav ul li').addClass('pinkblockli');
-                        $('.active').addClass('pinkactive');
-                        $('.active').removeClass('active');
                     }
                     else {
                         $('nav').removeClass('black');
-                        $('.pinklabel').addClass('logo');
-                        $('.pinklabel').removeClass('pinklabel');
-                        $('nav li a').removeClass('pinknav');
-                        $('.pinktoggle').addClass('toggle');
-                        $('.pinktoggle').removeClass('pinktoggle');
-                        $('nav ul li').removeClass('pinkblockli');
-                        $('.pinkactive').addClass('active');
-                        $('.pinkactive').removeClass('pinkactive');
-
                     }
                 })
             </script>
