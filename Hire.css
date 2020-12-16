@@ -20,7 +20,7 @@ header{
 nav{
     width: 100%;
     line-height: 20px;
-    background-color: #080808;
+    background-color: black;
     margin: 0;
     z-index: 1000;
     transition: 0.5s;   
@@ -41,17 +41,6 @@ label.logo{
     color: white;
     font-size: 30px;
     margin: 10px;
-}
-
-.pinklabel{
-    color: white;
-    font-size: 30px;
-    margin: 10px;
-}
-
-.pinknav{
-    text-decoration: none;
-    color: white;   
 }
 
 nav ul{
@@ -82,16 +71,6 @@ nav li a {
 .moblabel{
    float: left;
     font-size: 30px;
-}
-
-.pinktoggle{
-     width: 100%;
-    padding: 10px 20px;
-    text-align: right;
-    box-sizing: border-box;
-    color: white;
-    font-size: 30px;
-    display: none;
 }
 
 .taakloimg{
