@@ -188,7 +188,7 @@ input:focus{
   position: absolute;
   background-image: linear-gradient(to right ,#ff512f ,#dd2476);
   top: 100%;
-  left: 0px;
+  left: 0;
   right: 0;
   z-index: 99;
 }
