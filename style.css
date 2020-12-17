@@ -517,8 +517,10 @@ hr{
 table {
   font-family: arial, sans-serif;
   width: 100%;
-border-collapse: collapse;
-    text-align: center;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: cyan;
+    ;
 }
 
 td{
@@ -531,6 +533,27 @@ th{
   text-align: center;
   padding: 8px;
     font-size: 2em;
+}
+
+.cvlogo{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cvlogo:hover{
+    transform: scale(1.1);
+}
+.cvlogodiv{
+    text-align: center;
+}
+
+.cvlogodiv span{
+    font-weight: bold;
+    font-size: 24px;
 }
 
 
