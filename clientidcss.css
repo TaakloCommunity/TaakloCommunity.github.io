@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+   
+}
+
+.form{
+    text-align: center;
+    border: 5px solid red;
+    padding: 15px;
+    width: 250px;
+	height: 100px;
+    position: absolute;
+    border-radius: 10px;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.clientid{
+    outline: none;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.submit{
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: tomato;
+    color: white;
+}
