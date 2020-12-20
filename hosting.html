@@ -73,7 +73,7 @@
             <br>
             <br>
 
-                    <button class="offerbtn">Book Now</button>
+                    <button class="offerbtn" onclick="dollarplanclick()">Book Now</button>
 
             <br>
             <br>
@@ -85,7 +85,7 @@
             <br>
             <div class="btnsection">
                 <button class="btn homebtn" onclick="window.location.href='index.html'">Back To Home</button>
-            <button class="btn planbtn">View All Plans</button>
+            <button class="btn planbtn" onclick="planclick()">View All Plans</button>
             </div>
             <br>
         </section> 
@@ -114,6 +114,16 @@
                 $('ul').toggleClass('actives');
             })
         })            
+    </script>
+
+    <script>
+        function planclick(){
+            alert("This Page Is On Updation! Coming Soon.")
+        }
+
+        function dollarplanclick(){
+            alert("Soon Coming!")
+        }
     </script>
 
     </html>
