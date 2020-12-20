@@ -28,7 +28,7 @@
         <div class="container">
 
 
-           <section class="homePage" id="homePage"></section>
+            <section class="homePage" id="homePage"></section>
 
             <section class="main" id="#main">
                 <nav>
@@ -42,6 +42,7 @@
                         <li><a class="active" href="#homePage">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#accordian-section">Ask</a></li>
+                        <li><a href="hosting.html">Hosting</a></li>
                         <li><a href="#our-pro">Our Projects</a></li>
                     </ul>
 
@@ -66,7 +67,8 @@
                     you a better performance.<br class="break"> Taaklo also gives you an option to hire our developers
                     to create a <br class="break">stunning Application for you.
                     Not only for Android, you can also hire<br class="break"> our developers for creating IOS Apps,
-                    Websites, WebApplications,<br class="break"> PC Applications, UI Designs, Logo Designing, Backend Development<br class="break"> and
+                    Websites, WebApplications,<br class="break"> PC Applications, UI Designs, Logo Designing, Backend
+                    Development<br class="break"> and
                     more.
                 </h3>
 
@@ -237,11 +239,12 @@
                         <td>10</td>
                     </tr>
                 </table>
-                
+
                 <h1 class="our-projects">Latest Projects</h1>
-                <div class="cvlogodiv"><a link href="https://chikku-vavas.business.site/"><img alt="cvlogo" class="cvlogo" src="https://taaklocommunity.github.io/logo-white-print.png"></a><br>
-                <span>Logo Redesigning</span><br>
-                <span>(Textile Shop)</span>   
+                <div class="cvlogodiv"><a link href="https://chikku-vavas.business.site/"><img alt="cvlogo"
+                            class="cvlogo" src="https://taaklocommunity.github.io/logo-white-print.png"></a><br>
+                    <span>Logo Redesigning</span><br>
+                    <span>(Textile Shop)</span>
                 </div>
             </section>
 
@@ -401,37 +404,37 @@
                 })            
             </script>
 
-<script>
-    function sendEmail() {
-      var question = $(".questioninput");
-      if (isNotEmpty(question)) {
-        $.ajax({
-          url: 'form.php',
-          method: 'POST',
-          dataType: 'json',
-          data: {
-            question: question.val(),
-          }, success: function (response) {
-            $('.myForm')[0].reset();
-            $('.sent-noti').text("Your Form has been successfully sended!");
-          }
-        });
-      }
+            <script>
+                function sendEmail() {
+                    var question = $(".questioninput");
+                    if (isNotEmpty(question)) {
+                        $.ajax({
+                            url: 'form.php',
+                            method: 'POST',
+                            dataType: 'json',
+                            data: {
+                                question: question.val(),
+                            }, success: function (response) {
+                                $('.myForm')[0].reset();
+                                $('.sent-noti').text("Your Form has been successfully sended!");
+                            }
+                        });
+                    }
 
-    }
+                }
 
-    function isNotEmpty(caller) {
-      if (caller.val() == "") {
-        caller.css('border', '1px solid red');
-        return false;
-      }
-      else {
-        caller.css('border', '');
-        return true;
-      }
-    }
+                function isNotEmpty(caller) {
+                    if (caller.val() == "") {
+                        caller.css('border', '1px solid red');
+                        return false;
+                    }
+                    else {
+                        caller.css('border', '');
+                        return true;
+                    }
+                }
 
-  </script>
+            </script>
 
         </div>
     </body>
