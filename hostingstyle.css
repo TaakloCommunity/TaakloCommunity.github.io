@@ -98,7 +98,7 @@ nav li a {
 .megaoffer{
     border: 2px solid darkcyan;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0 5em;
+    margin: 0 1em;
     background-color:darkcyan;
     border-radius: 20px;
 }
