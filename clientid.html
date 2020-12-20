@@ -23,13 +23,21 @@
     <body>
          <div class="container">
              <div class="form">
-                 <input type="text" class="clientid" placeholder="Client ID" value=""><br>
+                 <input type="text" class="clientid" placeholder="Client ID"><br>
                  <button class="submit">Submit</button>
 
              </div>
          </div>
 
          <script type="text/javascript">
-            $('.submit')
+            var clientid = $(".clientid");
+            $('.submit').click(function(){
+                 if(clientid.val() == 'ali'){
+                     alert("hellp");
+                 }  
+                 else{
+                     alert("\""+clientid.val() + "\"" + " is not a client id!");
+                 }
+            })
         </script>
     </body>
