@@ -5,17 +5,19 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-}
-
-.container{
-   
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(https://taaklocommunity.github.io/cool-background.png);
 }
 
 .form{
     text-align: center;
     border: 5px solid red;
-    padding: 15px;
+    padding: 30px;
+    background-color: white;
     width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	height: 100px;
     position: absolute;
     border-radius: 10px;
@@ -39,4 +41,23 @@ body{
     margin-top: 20px;
     background-color: tomato;
     color: white;
+}
+
+.home{
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: tomato;
+    color: white;
+}
+
+.head{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    padding-top: 120px;
+}
+
+.headtext{
+    text-align: center;
 }
