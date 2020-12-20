@@ -556,6 +556,17 @@ th{
     font-size: 24px;
 }
 
+.link{
+    text-align: center;
+}
+.clientidlink{
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid tomato;
+    color: tomato;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 @media (max-width: 1300px)
 {
