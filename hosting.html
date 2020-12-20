@@ -1,0 +1,110 @@
+<!DoctypeHTML>
+    <html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>TAAKLO: your vision our tech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="hostingstyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.png">
+        <script src="indexjava.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="//code.jquery.com/jquery-3.5.1.js"></script>
+        <script
+            type="text/javascript">!function (t, e) { t.artibotApi = { l: [], t: [], on: function () { this.l.push(arguments) }, trigger: function () { this.t.push(arguments) } }; var a = !1, i = e.createElement("script"); i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e.getElementsByTagName("head").item(0).appendChild(i), i.onreadystatechange = i.onload = function () { if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this.readyState)) { new window.ArtiBot({ i: "3be285c5-d103-4f5e-8522-2bb2097074db" }); a = !0 } } }(window, document);</script>
+
+    </head>
+
+    <body>
+
+        <section class="section1">
+            <nav>
+                <div class="toggle">
+                    <img class="taakloimg" src="icon.png" width="50px" height="50px">
+                    <i class="fa fa-bars menu" aria-hidden="true"></i>
+                </div>
+                <label class="logo"><a link href="index.html"><img class="logoimg" src="taakloico.png" width="150px"
+                            height="70px"></a></label>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#accordian-section">Ask</a></li>
+                    <li><a href="#">Hosting</a></li>
+                    <li><a href="index.html#our-pro">Our Projects</a></li>
+                </ul>
+
+            </nav>
+
+            <h1 class="head">TaakHost At Service</h1>
+            <p class="taakpara">Holla! TaakHost combines all the Hosting service platforms and 
+                provides you the best hosting plan. We generate some offer plans which will be 
+                very usefull for our clients who trust us.
+            </p>
+
+            <div class="megaoffer">
+                <h1 class="head2">$1 Host</h1>
+                <p class="offerpara">Unlimited Website Hosting Just For $1/Month</p>
+                <p class="taakpara2">Free SSL Included</p>
+                <br>
+                <br>
+                <div class="offertable">
+                    <table>
+                        <tr>
+                            <th>Min Clients To Start</th>
+                            <th>Current Clients</th>
+                            <th>Req Clients To Start</th>
+                        </tr>
+      
+                        <tr>
+                            <td><input value="35" readonly></td>
+                            <td><input value="0" readonly></td>
+                            <td><input value="35" readonly></td>
+                        </tr>
+      
+                      </table>
+            <br>
+            <br>
+
+                    <button class="offerbtn">View Plan</button>
+
+            <br>
+            <br>
+
+      
+                </div>
+            </div>
+            <br>
+            <br>
+        </section> 
+
+    </body>
+
+    <script type="text/javascript">
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggleClass('actives');
+            })
+        })            
+    </script>
+
+    </html>
