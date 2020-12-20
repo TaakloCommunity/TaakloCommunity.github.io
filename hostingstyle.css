@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    width: 100%;
+    line-height: 20px;
+    background-color: black;
+    margin: 0;
+    z-index: 1000;
+    transition: 0.5s;   
+     position:fixed;
+   top:0;
+   overflow: hidden;
+}
+
+.black{
+    background-color: 	#080808;
+}
+
+label.logo{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+
+nav ul{
+    float: right;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    padding: 25px 26px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none; 
+}
+
+.moblabel{
+   float: left;
+    font-size: 30px;
+}
+
+.taakloimg{
+    float: left;
+    position: relative;
+    top: 5px;
+}
+
+.section1{
+    background-color: cadetblue;
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    padding-top: 100px;
+    font-size: 3em;
+    text-align: center;
+    color: black;
+}
+
+.taakpara{
+    text-align: center;
+    padding: 20px;
+}
+
+.taakpara2{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.megaoffer{
+    border: 2px solid darkcyan;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 5em;
+    background-color:darkcyan;
+    border-radius: 20px;
+}
+
+.head2{
+    font-size: 3em;
+    text-shadow: 1px 1px 10px white;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.offerpara{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.offertable{
+    text-align: center;
+}
+
+.megaoffer table{
+    text-align: center;
+    margin: auto;
+}
+
+th{
+    padding: 15px;
+    color: white;
+}
+
+td input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: darksalmon;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.offerbtn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 26px;
+    background-color: #FF4081;    
+    border-radius: 15px;
+    font-size: 1.0em;
+    color: white;
+}
+/*media query*/
+
+@media (max-width: 965px)
+{
+    
+    .toggle{
+        display: block;
+    }
+    
+    .pinktoggle{
+        display: block;
+    }
+    
+    ul{
+        width: 100%;
+        display: none;
+    }
+    
+    ul li{
+        display: block;
+        text-align: center;
+        transition: 0.5s;
+        background: #080808;
+    }
+    
+    .pinkblockli{
+        display: block;
+        text-align: center;
+        background: #080808;
+    }
+    
+    label.logo{
+        display: none;
+    }
+    
+    .pinklabel{
+        display: none;
+    }
+    
+    nav a{
+        color: white;
+    }
+    
+    a.active{
+        color: white;
+    }
+    pinkactive{
+        color: #FF4081;
+    }
+    
+    .actives{
+        display: block;
+    }
+}
