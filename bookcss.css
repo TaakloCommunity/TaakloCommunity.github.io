@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url(https://taaklocommunity.github.io/giffy.gif);
+}
+.form{
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #FFFF00;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.651);
+}
+
+form{
+    line-height: 50px;
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    width: 20em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: tomato;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.head{
+color: white;
+}
