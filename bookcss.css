@@ -33,6 +33,10 @@ input{
     border: none;
     outline: none;
 }
+.sub{
+    color: white;
+    text-align: center;
+}
 
 button{
     padding: 10px 20px;
@@ -45,4 +49,13 @@ button{
 
 .head{
 color: white;
+text-align: center;
+}
+
+
+@media (max-width: 780px){
+     .head{
+         float: left;
+         text-align: left;
+     }
 }
