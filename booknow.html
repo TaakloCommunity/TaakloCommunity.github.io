@@ -23,14 +23,58 @@
 
     <body>
         <div class="form">
-            <form method="POST">
-                <input type="text" name="firstname" placeholder="Enter Your FirstName" required><br>
-                <input type="text" name="surname" placeholder="Enter Your SurName"><br>
-                <input type="tel" name="number" placeholder="Enter Your Number"> <br>
-                <input type="email" name="email" placeholder="Enter Your Email"><br>
-                <input type="text" name="country" placeholder="Enter Your Country">
+            <h1 class="head">Book Your Unlimited Plan Now!</h1>
+            <form method="POST" action="https://php-taaklo.000webhostapp.com/book.php">
+                <input type="text" class="firstname" name="firstname" placeholder="Enter Your FirstName" required><br>
+                <input type="text" class="surname" name="surname" placeholder="Enter Your SurName"><br>
+                <input type="tel" class="number" name="number" placeholder="Enter Your Number"> <br>
+                <input type="email" class="email" name="email" placeholder="Enter Your Email"><br>
+                <input type="text" class="country" name="country" placeholder="Enter Your Country"><br>
+                <button type="button" class="backbtn" onclick="window.location.href='hosting.html'">Back</button>
+                <button type="button" class="bookbtn" onclick="">BookNow</button>
             </form>
         </div>
+
+        <script>
+            function sendEmail() {
+              var firstname = $(".fistname");
+              var surname = $(".surname")
+              var number = $(".number");
+              var email = $(".email");
+              var country = $(".country");
+      
+              if (isNotEmpty(firstname) && isNotEmpty(email) && isNotEmpty(number) && isNotEmpty(country) && isNotEmpty(surname)) {
+                $.ajax({
+                  url: 'form.php',
+                  method: 'POST',
+                  dataType: 'json',
+                  data: {
+                    firstname: firstname.val(),
+                    email: email.val(),
+                    number: number.val(),
+                    country: country.val(),
+                    surname: surname.val(),
+                  }, success: function (response) {
+                    $('.myForm')[0].reset();
+                    $('.sent-noti').text("Your Form has been successfully sended!");
+                  }
+                });
+              }
+      
+            }
+      
+            function isNotEmpty(caller) {
+              if (caller.val() == "") {
+                caller.css('border', '1px solid red');
+                return false;
+              }
+              else {
+                caller.css('border', '');
+                return true;
+              }
+            }
+      
+          </script>
     </body>
     
     
