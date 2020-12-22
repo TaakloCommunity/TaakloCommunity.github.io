@@ -8,41 +8,44 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.fasfa{
+.container{
   left: 50%;
   position: absolute;
-  top: 30%;
+  top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
+  width:fit-content;
   padding: 20px;
-  font-size: 100px;
-  width: 110px;
+  background-color: white;
+  height:max-content;
   text-align: center;
+}
+
+.icon{
+  font-size: 100px;
   background-color: darkgreen;
   border-radius: 50%;
+  width: 120px;
+  padding: 20px;
   color: white;
+  text-align: center;
+  margin: 30px auto;
 }
 
 p{
-  left: 50%;
-  position: absolute;
-  top: 55%;
+  margin-top: 60px;
   font-weight: bold;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 20px;
+  font-size: 25px;
 }
 
 button{
-  left: 50%;
-  position: absolute;
-  top: 70%;
-  font-weight: bold;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 10px;
-  border: none;
+  margin-top: 50px;
+  padding: 12px 26px;
+  border: 2px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
   background-color: white;
   color: green;
-  border-radius: 10px;
+
 }
