@@ -1,48 +1,51 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-    background-color: rgb(255, 104, 104);
-    font-family: 'Montserrat', sans-serif;
+  background-color: rgb(255, 86, 80);
+  font-family: 'Montserrat', sans-serif;
 }
 
-.fasfa{
-  left: 50%;
-  position: absolute;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  padding: 20px;
-  font-size: 100px;
-  width: 110px;
-  text-align: center;
-  background-color: red;
-  border-radius: 50%;
-  color: white;
+.container{
+left: 50%;
+position: absolute;
+top: 50%;
+transform: translate(-50%, -50%);
+border-radius: 10px;
+width:fit-content;
+padding: 20px;
+background-color: white;
+height:max-content;
+text-align: center;
+}
+
+.icon{
+font-size: 100px;
+background-color: red;
+border-radius: 50%;
+width: 120px;
+padding: 20px;
+color: white;
+text-align: center;
+margin: 30px auto;
 }
 
 p{
-  left: 50%;
-  position: absolute;
-  top: 55%;
-  font-weight: bold;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 20px;
+margin-top: 60px;
+font-weight: bold;
+font-size: 25px;
 }
 
 button{
-  left: 50%;
-  position: absolute;
-  top: 70%;
-  font-weight: bold;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 10px;
-  border: none;
-  background-color: white;
-  color: red;
-  border-radius: 10px;
+margin-top: 50px;
+padding: 12px 26px;
+border: 2px solid red;
+border-radius: 10px;
+outline: none;
+background-color: white;
+color: red;
+cursor: pointer;
+
 }
