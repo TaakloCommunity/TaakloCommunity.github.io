@@ -11,7 +11,7 @@ body{
 .fasfa{
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
   padding: 20px;
@@ -26,9 +26,23 @@ body{
 p{
   left: 50%;
   position: absolute;
-  top: 75%;
+  top: 55%;
   font-weight: bold;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 20px;
+}
+
+button{
+  left: 50%;
+  position: absolute;
+  top: 70%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: green;
+  border-radius: 10px;
 }
