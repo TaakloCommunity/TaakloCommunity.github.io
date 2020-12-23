@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -96,10 +97,10 @@ nav li a {
 }
 
 .megaoffer{
-    border: 2px solid darkcyan;
+    border: 5px solid rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0 1em;
-    background-color:darkcyan;
+    background-color:rgba(7, 7, 7, 0.925);
     border-radius: 20px;
 }
 
@@ -176,6 +177,8 @@ td input{
     color: tomato;
 }
 
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -206,7 +209,14 @@ td input{
     .toggle{
         display: block;
     }
+
+    .card-ul{
+        display: block;
+    }
     
+    .card-li{
+        background: none;
+    }
     .pinktoggle{
         display: block;
     }
