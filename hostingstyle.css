@@ -177,6 +177,149 @@ td input{
     color: tomato;
 }
 
+footer{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .container .sec{
+    margin-right: 30px;
+}
+
+footer .container .sec.aboutus{
+    width: 40%;
+}
+
+footer .container h2{
+    position: relative;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+footer .container h2::before{
+    content: '';
+    position: absolute;
+    border: -5px;
+    left: 0;
+    width: 50px;
+    background: #f00;
+}
+
+footer p{
+    color: #999;
+
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.sci li a:hover{
+    background: #f00;
+}
+
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li{
+    list-style: none;
+}
+
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: white;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info{
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    text-align: center;
+    padding: 8px 0;
+    color: #999;
+}
+
+
 
 
 /* width */
@@ -209,24 +352,17 @@ td input{
     .toggle{
         display: block;
     }
-
-    .card-ul{
-        display: block;
-    }
     
-    .card-li{
-        background: none;
-    }
     .pinktoggle{
         display: block;
     }
     
-    ul{
+    nav ul{
         width: 100%;
         display: none;
     }
     
-    ul li{
+    nav ul li{
         display: block;
         text-align: center;
         transition: 0.5s;
@@ -261,4 +397,22 @@ td input{
     .actives{
         display: block;
     }
+
+    footer{
+        padding: 40px; 
+    }
+
+    footer .container{
+        flex-direction: column;
+    }
+    
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container .sec.aboutus, .quickLinks, .contact{
+        width: 100%;
+    }
+    
 }
