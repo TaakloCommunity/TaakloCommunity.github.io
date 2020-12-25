@@ -33,9 +33,9 @@ nav{
     margin: 0;
     z-index: 1000;
     transition: 0.5s;   
-     position:fixed;
-   top:0;
-   overflow: hidden;
+    position:fixed;
+    top:0;
+    overflow: hidden;
 }
 
 .black{
@@ -51,8 +51,6 @@ label.logo{
     font-size: 30px;
     margin: 10px;
 }
-
-
 
 nav ul{
     float: right;
@@ -824,12 +822,12 @@ footer p{
         display: block;
     }
     
-    ul{
+    nav ul{
         width: 100%;
         display: none;
     }
     
-    ul li{
+    nav ul li{
         display: block;
         text-align: center;
         transition: 0.5s;
