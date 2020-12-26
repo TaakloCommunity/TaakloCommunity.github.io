@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <script src="indexjava.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="//code.jquery.com/jquery-3.5.1.js">
-    </script>
+    <script src="//code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <link rel="stylesheet" href="transitionstyle.css"> 
 
   </head>
 
@@ -42,7 +43,7 @@
     <br>
     <br>
     <br>
-
+     <main id="swup" class="transition-fade">
     <h1 class="thanks">Thanks For Your Interest</h1>
     <h3 class="wait">Please answer below questions and we will be in touch with you..</h3>
 
@@ -96,7 +97,7 @@
       will be contacting you within a short time.</p>
 
     <h4 class="sent-noti"></h4>
-
+    </main>
     <footer>
       <div class="container">
           <div class="sec aboutus">
@@ -369,6 +370,9 @@
           $('nav ul').toggleClass('actives');
         })
       })            
+    </script>
+    <script>
+      const swup = new Swup();
     </script>
 
 
