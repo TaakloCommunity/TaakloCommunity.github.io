@@ -47,6 +47,17 @@ nav li a {
     color: white;
 }
 
+
+.live{
+    padding: 15px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.live:hover{
+    background-color: rgba(255, 0, 0, 0.781);
+}
+
 .toggle{
     width: 100%;
     padding: 10px 20px;
